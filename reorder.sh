@@ -1,10 +1,18 @@
-#!/bin/bash
 
-for f in ./*;
-do 
-[ -d $f] &&  cd "$f" && /usr/bin/reorder.sh
-cd ..
+#for f in ./*;
 
+#do 
+
+#for subdir in ./*;
+
+#do 
+
+#[ -d "$f" ] &&  cd "$f" 
+#cd ..
+ 
+ls | sort
+
+#!/bin/bash/
 
 echo "Your files are currently in this order:"
 
@@ -22,6 +30,8 @@ done
 echo -e "\n \nHere is your new listing: "
 
 ls -Ghlct
+
+
 
 exit
 
